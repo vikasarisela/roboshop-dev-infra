@@ -12,7 +12,7 @@ module "vpc" {
   private_subnet_cidrs = var.private_subnet_cidrs_module
   database_subnet_cidrs = var.database_subnet_cidrs_module
 
-  is_peering_required = false
+ # is_peering_required = false
 }
 
 
