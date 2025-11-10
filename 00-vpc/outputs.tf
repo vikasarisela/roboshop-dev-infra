@@ -6,14 +6,15 @@ output "vpc_id" {
 #   value = data.aws_availability_zones.avaiable
 # }
 
-output "public_subnet_ids" {
-  value = module.vpc.public_subnet_id 
+output "pub" {
+  description = "i am from "
+  value = module.vpc.public_subnet_ids
 }
 
 output "private_subnet_ids" {
-  value = module.vpc.public_subnet_id 
+  value = module.vpc.private_subnet_ids 
 }
 
 output "databse_subnet_ids" {
-  value = module.vpc.public_subnet_id 
+  value = module.vpc.public_subnet_ids
 }
